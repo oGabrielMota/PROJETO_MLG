@@ -6,7 +6,7 @@ import cria_conta
 
 cria_conta
 
-#Itens que seram dinamicos depois
+#Itens que seram dinamicos depoiss
 id_conta = 1 #Corresponde conta Aron
 nome_arquivo = "teste01.xlsx"
 
