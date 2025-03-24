@@ -1,13 +1,18 @@
 import pandas as pd
 import re
 from banco_dados import Conta, Conteudo_Relatorio, Relatorio, session
-import cria_conta
+from cria_conta import cria_contas
 
 
-cria_conta
+contas_criadas = session.query(Conta).all()
 
-#Itens que seram dinamicos depoiss
-id_conta = 1 #Corresponde conta Aron
+
+if len(contas_criadas) == 0:
+    cria_contas()
+
+
+#Itens que seram dinamicos depois
+id_conta = int(input('Para qual conta é esse relatorio?'))
 nome_arquivo = "teste01.xlsx"
 
 conta_existente = session.query(Conta).filter_by(id=id_conta).first()
