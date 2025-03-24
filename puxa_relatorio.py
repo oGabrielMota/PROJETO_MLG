@@ -4,8 +4,8 @@ from banco_dados import Conta, Conteudo_Relatorio, Relatorio, session
 from cria_conta import cria_contas
 
 
-contas_criadas = session.query(Conta).all()
 
+contas_criadas = session.query(Conta).all()
 
 if len(contas_criadas) == 0:
     cria_contas()

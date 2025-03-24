@@ -1,0 +1,30 @@
+# Arquivos Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Arquivos de ambiente virtual
+venv/
+.env/
+.env
+
+# Arquivos de configuração locais
+*.sqlite3
+*.db
+*.log
+
+# Configs do VSCode (opcional)
+.vscode/
+
+# Arquivos sensíveis
+sku.xlsx
+cria_conta.py
+
+# Cache de pacotes e distribuições
+*.egg-info/
+dist/
+build/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
